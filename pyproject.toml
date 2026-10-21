@@ -1,0 +1,24 @@
+[project]
+name = "lab5"
+version = "0.1.0"
+description = "AIDAMS Lab 5: put uncertainty into your project (EU gas imports, upstream methane)"
+readme = "README.md"
+authors = [
+    { name = "Mallat Jawad", email = "jawad.mallat@student-cs.fr" }
+]
+requires-python = ">=3.13"
+dependencies = [
+    "ipykernel>=7.4.0",
+    "matplotlib>=3.11.2",
+    "numpy>=2.5.4",
+    "pandas>=3.0.6",
+    "scipy>=1.18.1",
+]
+
+[project.optional-dependencies]
+fetch = [
+    "certifi>=2026.10.19",
+]
+
+[tool.uv]
+package = false
